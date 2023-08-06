@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="head">A survey for the drainage system in your loacality</h1>
+        <h2 id="subheading">Thank you for taking the time to co-operate with us !!</h2>
+    </div>
+    <section class="wholeSec">
+            <div class="container">
+                <form  action="https://formsubmit.co/caa1e01d8292351b9ee1848bc909f7d0" method="POST" id="my-form" onsubmit="return validateForm()">
+                    <!-- intro page -->
+                    <div class="introcontainer">
+                        <h1 class="intro-title">Drainage System Survey</h1>
+                        <h2 class="intro-subtitle">Have Your Say in Improving Our Locality's Drainage!</h2>
+                        <div class="intro-text">
+                          <ul>
+                            <li>Welcome to the Drainage System Survey for our locality.</li>
+                            <li>Your input is crucial in identifying and addressing drainage issues.</li>
+                            <li>We value your perspective to make our community safer and more resilient.</li>
+                          </ul>
+                        </div>
+                        <a class="next-page-link"  onclick="showPage1()">Let's Get Started <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+
+                      <!-- First page of the form -->
+                    <div class="step step-2" id="first">
+                        <a class="topHeading"><i class="fas fa-dice"></i>Contact info...</a>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="First&nbsp;Name" placeholder="First Name" required pattern="[A-Za-z]+" title="Please enter alphabets only">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="Last&nbsp;Name" placeholder="Last Name" required pattern="[A-Za-z]+" title="Please enter alphabets only">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nickName">Nick Name</label>
+                            <input type="text" id="nickName" name="Nick&nbsp;Name" placeholder="Nick Name" required pattern="[A-Za-z]+" title="Please enter alphabets only">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" placeholder="demo@gmail.com" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" >Phone Number</label>
+                            <input type="number" id="phone" name="Phone&nbsp;number" placeholder="Phone Number" required pattern="[0-9]+" title="Please enter numbers only">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="Address" placeholder="Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pinCode">Pin Code</label>
+                            <input type="" id="pin" name="Pin&nbsp;code" placeholder="Pin Code" required pattern="[0-9]+" title="Please enter numbers only">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" >With whom do you live in </label>
+                            <input type="" id="phone" name="With&nbsp;whom" placeholder="With whom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label><br>
+                            <select id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label><br>
+                            <select id="age" name="age">
+                                <option value="Below 10">Below 10</option>
+                                <option value="10-25">10-25</option>
+                                <option value="25-40">25-40</option>
+                                <option value="Above 40">Above 40</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cleaning">In how many days you clean your drainage system of your house</label><br>
+                            <select id="cleaning" name="cleaning">
+                                <option value="1 times">1 times</option>
+                                <option value="2 times">2 times</option>
+                                <option value="3 times">3 times</option>
+                                <option value="More than 3">More than 3</option>
+                            </select>
+                        </div>
+                        <button type="button" class="next-btn" onclick="showPage2()">Next</button>
+                    </div>
+                    <!-- second form page -->
+                    <div class="step step-3" id="second">
+                        <a class="topHeading"><i class="fas fa-seedling"></i>Share your opinion...</a><br><br>
+                        <div class="form-group1">
+                            <p>1. How satisfied are you with the current drainage system in your locality?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="verySatisfied" name="satisfaction" value="Very Satisfied">
+                                <label for="verySatisfied">Very Satisfied</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
+                                <label for="satisfied">Satisfied</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="Neutral" name="satisfaction" value="Neutral">
+                                <label for="Neutral">Neutral</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="unsatisfied" name="satisfaction" value="Satisfied">
+                                <label for="unsatisfied">Unsatisfied</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="veryunsatisfied" name="satisfaction" value="Veryunsatisfied">
+                                <label for="veryunsatisfied">Very unsatisfied</label>
+                            </div><br>
+                        </div>
+                        <div class="form-group1">
+                            <p>2. Have you experienced any drainage issues in the past year?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="yesIssues" name="Drainage&nbsp;Issues" value="Yes">
+                                <label for="yesIssues">Yes</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="noIssues" name="Drainage&nbsp;Issues" value="No">
+                                <label for="noIssues">No</label><br>
+                            </div>
+                        </div><br>
+                        <div class="form-group1">
+                            <p>3. If you answered "Yes" to the previous question, please briefly describe the drainage issues you faced:</p>
+                            <textarea id="description" name="Description" rows="4" cols="50"></textarea><br>
+                        </div><br>
+                        <div class="form-group1">
+                            <p>4. Are there any specific areas in your locality that you believe have poor drainage?</p>
+                            <textarea id="poorDrainageAreas" name="Poor&nbsp;Drainage&nbsp;Areas" rows="4" cols="50"></textarea><br>
+                        </div><br>
+                        <div class="form-group1">
+                            <p>5. How often do you notice water pooling or standing in streets after rainfall?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="always" name="Water&nbsp;Pooling" value="Always">
+                                <label for="always">Always</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="often" name="Water&nbsp;Pooling" value="Often">
+                                <label for="often">Often</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="sometimes" name="Water&nbsp;Pooling" value="Sometimes">
+                                <label for="sometimes">Sometimes</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="rarely" name="Water&nbsp;Pooling" value="Rarely">
+                                <label for="rarely">Rarely</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="never" name="Water&nbsp;Pooling" value="Never">
+                                <label for="never">Never</label><br>
+                            </div>
+                        </div><br>
+                        <div class="form-group1">
+                            <p>6. Have you witnessed any blocked drains causing water accumulation during heavy rain?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="yesIssues" name="Heavy&nbsp;Rain&nbsp;problem" value="Yes">
+                                <label for="yesIssues">Yes</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="noIssues" name="Heavy&nbsp;Rain&nbsp;problem" value="No">
+                                <label for="noIssues">No</label><br>
+                            </div>
+                        </div><br>
+                        <div class="form-group1">
+                            <p>7. How well do you think the drainage system handles heavy rainfall?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="verywell" name="Handling&nbsp;heavy&nbsp;rainfall" value="Very well">
+                                <label for="verywell">Very well</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="adequately" name="Handling&nbsp;heavy&nbsp;rainfall" value="Adequately">
+                                <label for="adequately">Adequately</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="moderately" name="Handling&nbsp;heavy&nbsp;rainfall" value="Moderately">
+                                <label for="moderately">Moderately</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="poorly" name="Handling&nbsp;heavy&nbsp;rainfall" value="Poorly">
+                                <label for="poorly">Poorly</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="verypoorly" name="Handling&nbsp;heavy&nbsp;rainfall" value="Very poorly">
+                                <label for="verypoorly">Very poorly</label>
+                            </div><br>
+                        </div>
+                        <div class="form-group1">
+                            <p>8. Do you think the current drainage system is well-maintained?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="YESIssues" name="Drainage&nbsp;system" value="Yes" onclick="noTextarea();">
+                                <label for="YESIssues">Yes</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="noIssues" name="Drainage&nbsp;system" value="No" onclick="toggleTextarea();">
+                                <label for="noIssues">No</label><br>
+                            </div>
+                            <div id="additionalMessage">
+                                <label for="message">Additional Message:</label><br>
+                                <textarea id="Message" name="message" rows="4" cols="50"></textarea><br>
+                            </div>
+                        </div><br>
+                        <div class="form-group1">
+                            <p>10. Would you be willing to report drainage issues to the local authorities or community groups?</p>
+                            <div class="radio-group">
+                                <input type="radio" id="yes always" name="Report&nbsp;drainage&nbsp;system" value="Yes always">
+                                <label for="yes always">Yes, Always</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="yes sometimes" name="Report&nbsp;drainage&nbsp;system" value="Yes sometimes">
+                                <label for="yes sometimes">Yes, Sometimes</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="not prefer" name="Report&nbsp;drainage&nbsp;system" value="Not prefer">
+                                <label for="not prefer">No, I Prefer Not To</label><br>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="unsure" name="Report&nbsp;drainage&nbsp;system" value="Unsure">
+                                <label for="unsure">No, I'm Unsure</label><br>
+                            </div><br>
+                        </div>
+                        <button type="button" name="Submit" class="previous-btn" onclick="showPreviousPage(document.querySelector('#second'), document.querySelector('#first'))">Prev</button>
+                        <button type="submit" class="next-btn" name="submit" onclick="showSubmit()">Finish</button>
+                    </div>
+                    <!-- third form page -->
+                    <div class="step step-4" id="third">
+                        <h1 style="color: rgb(17, 109, 63);">Thanks for submitting</h1>
+                        <p>Contact Details: <strong>Email: your-email@example.com, Phone: (123) 456-7890</strong></p>
+                    </div>
+                </form>
+            </div>
+        <!-- </div> -->
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
